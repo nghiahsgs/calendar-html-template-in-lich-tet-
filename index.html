@@ -1,0 +1,2290 @@
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: "Noto Serif";
+            zoom: 120%;
+        }
+        
+        td {
+            border: none;
+        }
+        
+        .tennam {
+            text-align: center;
+            font-size: 150%;
+            line-height: 120%;
+            font-weight: bold;
+            color: #000000;
+            background-color: #CCCCCC
+        }
+
+        .thang {
+            width: 280px;
+            margin-left: 25px;
+            margin-right: 25px;
+            font-size: 9pt;
+            line-height: 100%;
+            table-layout: fixed;
+            border: none;
+        }
+
+        .tenthang {
+            /*font-family: "Courgette";*/
+            padding-bottom: 10px;
+            text-align: center;
+            font-size: 250%;
+            line-height: 100%;
+            font-weight: bold;
+            color: #000;
+            background-color: #fff
+        }
+
+        .navi-l {
+            opacity: 0;
+            text-align: center;
+            font-size: 75%;
+            line-height: 100%;
+            font-weight: bold;
+            color: red;
+            background-color: #CCFFCC
+        }
+
+        .navi-r {
+            opacity: 0;
+            text-align: center;
+            font-size: 75%;
+            line-height: 100%;
+            font-weight: bold;
+            color: #330033;
+            background-color: #CCFFCC
+        }
+
+        .ngaytuan {
+            font-weight: 600;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 10px;
+            width: 14%;
+            text-align: center;
+            font-size: 125%;
+            line-height: 100%;
+            color: #000;
+            background-color: #ffffff
+        }
+
+        .ngaythang {
+            padding-right: 5px;
+            padding-left: 5px;
+            font-size: 135%;
+            background-color: #ffffff
+        }
+
+        .homnay {
+            background-color: #ffffff
+        }
+
+        .tet {
+            color: #420000
+        }
+
+        .am {
+            text-align: right;
+            font-size: 75%;
+            line-height: 100%;
+            color: #777
+        }
+
+        .am2 {
+            text-align: right;
+            font-size: 75%;
+            line-height: 100%;
+            color: #004080
+        }
+
+        .t2t6 {
+            text-align: left;
+            font-size: 125%;
+            color: black
+        }
+
+        .t7 {
+            text-align: left;
+            font-size: 125%;
+            line-height: 100%;
+            color: green
+        }
+
+        .cn {
+            text-align: left;
+            font-size: 125%;
+            line-height: 100%;
+            color: #420000
+        }
+    </style>
+    <table align="center">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=1">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=12">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Janvier</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=2">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=1">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Tỵ, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(15,11,2017,0,2458120,1,1,2018);" style="color:black">1
+                                    <div class="am">15/11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Ngọ, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(16,11,2017,0,2458121,2,1,2018);" style="color:black">2
+                                    <div class="am">16</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mùi, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(17,11,2017,0,2458122,3,1,2018);" style="color:black">3
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thân, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(18,11,2017,0,2458123,4,1,2018);" style="color:black">4
+                                    <div class="am">18</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Dậu, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(19,11,2017,0,2458124,5,1,2018);" style="color:black">5
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tuất, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(20,11,2017,0,2458125,6,1,2018);" style="color:black">6
+                                    <div class="am">20</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Kỷ Hợi, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(21,11,2017,0,2458126,7,1,2018);" style="color:#bb0000">7
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tý, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(22,11,2017,0,2458127,8,1,2018);" style="color:black">8
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Sửu, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(23,11,2017,0,2458128,9,1,2018);" style="color:black">9
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Dần, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(24,11,2017,0,2458129,10,1,2018);" style="color:black">10
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mão, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(25,11,2017,0,2458130,11,1,2018);" style="color:black">11
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thìn, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(26,11,2017,0,2458131,12,1,2018);" style="color:black">12
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Tỵ, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(27,11,2017,0,2458132,13,1,2018);" style="color:black">13
+                                    <div class="am">27</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Bính Ngọ, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(28,11,2017,0,2458133,14,1,2018);" style="color:#bb0000">14
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mùi, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(29,11,2017,0,2458134,15,1,2018);" style="color:black">15
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thân, tháng Nhâm Tý, năm Đinh Dậu" onclick="alertDayInfo(30,11,2017,0,2458135,16,1,2018);" style="color:black">16
+                                    <div class="am">30</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Dậu, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(1,12,2017,0,2458136,17,1,2018);" style="color:black">17
+                                    <div class="am">1/12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tuất, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(2,12,2017,0,2458137,18,1,2018);" style="color:black">18
+                                    <div class="am">2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Hợi, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(3,12,2017,0,2458138,19,1,2018);" style="color:black">19
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tý, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(4,12,2017,0,2458139,20,1,2018);" style="color:black">20
+                                    <div class="am">4</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Quý Sửu, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(5,12,2017,0,2458140,21,1,2018);" style="color:#bb0000">21
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Dần, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(6,12,2017,0,2458141,22,1,2018);" style="color:black">22
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mão, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(7,12,2017,0,2458142,23,1,2018);" style="color:black">23
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thìn, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(8,12,2017,0,2458143,24,1,2018);" style="color:black">24
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Tỵ, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(9,12,2017,0,2458144,25,1,2018);" style="color:black">25
+                                    <div class="am">9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Ngọ, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(10,12,2017,0,2458145,26,1,2018);" style="color:black">26
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mùi, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(11,12,2017,0,2458146,27,1,2018);" style="color:black">27
+                                    <div class="am">11</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Canh Thân, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(12,12,2017,0,2458147,28,1,2018);" style="color:#bb0000">28
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Dậu, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(13,12,2017,0,2458148,29,1,2018);" style="color:black">29
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tuất, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(14,12,2017,0,2458149,30,1,2018);" style="color:black">30
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Hợi, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(15,12,2017,0,2458150,31,1,2018);" style="color:black">31
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=2">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=1">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Février</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=3">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=2">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tý, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(16,12,2017,0,2458151,1,2,2018);" style="color:black">1
+                                    <div class="am">16/12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Sửu, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(17,12,2017,0,2458152,2,2,2018);" style="color:black">2
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Dần, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(18,12,2017,0,2458153,3,2,2018);" style="color:black">3
+                                    <div class="am">18</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Đinh Mão, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(19,12,2017,0,2458154,4,2,2018);" style="color:#bb0000">4
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thìn, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(20,12,2017,0,2458155,5,2,2018);" style="color:black">5
+                                    <div class="am">20</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Tỵ, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(21,12,2017,0,2458156,6,2,2018);" style="color:black">6
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Ngọ, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(22,12,2017,0,2458157,7,2,2018);" style="color:black">7
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mùi, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(23,12,2017,0,2458158,8,2,2018);" style="color:black">8
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thân, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(24,12,2017,0,2458159,9,2,2018);" style="color:black">9
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Dậu, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(25,12,2017,0,2458160,10,2,2018);" style="color:black">10
+                                    <div class="am">25</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Giáp Tuất, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(26,12,2017,0,2458161,11,2,2018);" style="color:#bb0000">11
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Hợi, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(27,12,2017,0,2458162,12,2,2018);" style="color:black">12
+                                    <div class="am">27</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tý, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(28,12,2017,0,2458163,13,2,2018);" style="color:black">13
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Sửu, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(29,12,2017,0,2458164,14,2,2018);" style="color:black">14
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Dần, tháng Quý Sửu, năm Đinh Dậu" onclick="alertDayInfo(30,12,2017,0,2458165,15,2,2018);" style="color:black">15
+                                    <div class="am">30</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mão, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(1,1,2018,0,2458166,16,2,2018);" style="color:black">16
+                                    <div class="am">1/1</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thìn, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(2,1,2018,0,2458167,17,2,2018);" style="color:black">17
+                                    <div class="am">2</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Tân Tỵ, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(3,1,2018,0,2458168,18,2,2018);" style="color:#bb0000">18
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Ngọ, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(4,1,2018,0,2458169,19,2,2018);" style="color:black">19
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mùi, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(5,1,2018,0,2458170,20,2,2018);" style="color:black">20
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thân, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(6,1,2018,0,2458171,21,2,2018);" style="color:black">21
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Dậu, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(7,1,2018,0,2458172,22,2,2018);" style="color:black">22
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tuất, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(8,1,2018,0,2458173,23,2,2018);" style="color:black">23
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Hợi, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(9,1,2018,0,2458174,24,2,2018);" style="color:black">24
+                                    <div class="am">9</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Mậu Tý, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(10,1,2018,0,2458175,25,2,2018);" style="color:#bb0000">25
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Sửu, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(11,1,2018,0,2458176,26,2,2018);" style="color:black">26
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Dần, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(12,1,2018,0,2458177,27,2,2018);" style="color:black">27
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mão, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(13,1,2018,0,2458178,28,2,2018);" style="color:black">28
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=3">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=2">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Mars</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=4">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=3">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thìn, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(14,1,2018,0,2458179,1,3,2018);" style="color:black">1
+                                    <div class="am">14/1</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Tỵ, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(15,1,2018,0,2458180,2,3,2018);" style="color:black">2
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Ngọ, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(16,1,2018,0,2458181,3,3,2018);" style="color:black">3
+                                    <div class="am">16</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Ất Mùi, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(17,1,2018,0,2458182,4,3,2018);" style="color:#bb0000">4
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thân, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(18,1,2018,0,2458183,5,3,2018);" style="color:black">5
+                                    <div class="am">18</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Dậu, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(19,1,2018,0,2458184,6,3,2018);" style="color:black">6
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tuất, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(20,1,2018,0,2458185,7,3,2018);" style="color:black">7
+                                    <div class="am">20</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Hợi, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(21,1,2018,0,2458186,8,3,2018);" style="color:black">8
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tý, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(22,1,2018,0,2458187,9,3,2018);" style="color:black">9
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Sửu, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(23,1,2018,0,2458188,10,3,2018);" style="color:black">10
+                                    <div class="am">23</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Nhâm Dần, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(24,1,2018,0,2458189,11,3,2018);" style="color:#bb0000">11
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mão, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(25,1,2018,0,2458190,12,3,2018);" style="color:black">12
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thìn, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(26,1,2018,0,2458191,13,3,2018);" style="color:black">13
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Tỵ, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(27,1,2018,0,2458192,14,3,2018);" style="color:black">14
+                                    <div class="am">27</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Ngọ, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(28,1,2018,0,2458193,15,3,2018);" style="color:black">15
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mùi, tháng Giáp Dần, năm Mậu Tuất" onclick="alertDayInfo(29,1,2018,0,2458194,16,3,2018);" style="color:black">16
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thân, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(1,2,2018,0,2458195,17,3,2018);" style="color:black">17
+                                    <div class="am">1/2</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Kỷ Dậu, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(2,2,2018,0,2458196,18,3,2018);" style="color:#bb0000">18
+                                    <div class="am">2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tuất, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(3,2,2018,0,2458197,19,3,2018);" style="color:black">19
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Hợi, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(4,2,2018,0,2458198,20,3,2018);" style="color:black">20
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tý, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(5,2,2018,0,2458199,21,3,2018);" style="color:black">21
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Sửu, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(6,2,2018,0,2458200,22,3,2018);" style="color:black">22
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Dần, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(7,2,2018,0,2458201,23,3,2018);" style="color:black">23
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mão, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(8,2,2018,0,2458202,24,3,2018);" style="color:black">24
+                                    <div class="am">8</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Bính Thìn, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(9,2,2018,0,2458203,25,3,2018);" style="color:#bb0000">25
+                                    <div class="am">9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Tỵ, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(10,2,2018,0,2458204,26,3,2018);" style="color:black">26
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Ngọ, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(11,2,2018,0,2458205,27,3,2018);" style="color:black">27
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mùi, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(12,2,2018,0,2458206,28,3,2018);" style="color:black">28
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thân, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(13,2,2018,0,2458207,29,3,2018);" style="color:black">29
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Dậu, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(14,2,2018,0,2458208,30,3,2018);" style="color:black">30
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tuất, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(15,2,2018,0,2458209,31,3,2018);" style="color:black">31
+                                    <div class="am">15</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=4">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=3">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Avril</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=5">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=4">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Quý Hợi, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(16,2,2018,0,2458210,1,4,2018);" style="color:#bb0000">1
+                                    <div class="am">16/2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tý, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(17,2,2018,0,2458211,2,4,2018);" style="color:black">2
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Sửu, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(18,2,2018,0,2458212,3,4,2018);" style="color:black">3
+                                    <div class="am">18</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Dần, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(19,2,2018,0,2458213,4,4,2018);" style="color:black">4
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mão, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(20,2,2018,0,2458214,5,4,2018);" style="color:black">5
+                                    <div class="am">20</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thìn, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(21,2,2018,0,2458215,6,4,2018);" style="color:black">6
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Tỵ, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(22,2,2018,0,2458216,7,4,2018);" style="color:black">7
+                                    <div class="am">22</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Canh Ngọ, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(23,2,2018,0,2458217,8,4,2018);" style="color:#bb0000">8
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mùi, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(24,2,2018,0,2458218,9,4,2018);" style="color:black">9
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thân, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(25,2,2018,0,2458219,10,4,2018);" style="color:black">10
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Dậu, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(26,2,2018,0,2458220,11,4,2018);" style="color:black">11
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tuất, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(27,2,2018,0,2458221,12,4,2018);" style="color:black">12
+                                    <div class="am">27</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Hợi, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(28,2,2018,0,2458222,13,4,2018);" style="color:black">13
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tý, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(29,2,2018,0,2458223,14,4,2018);" style="color:black">14
+                                    <div class="am">29</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Đinh Sửu, tháng Ất Mão, năm Mậu Tuất" onclick="alertDayInfo(30,2,2018,0,2458224,15,4,2018);" style="color:#bb0000">15
+                                    <div class="am">30</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Dần, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(1,3,2018,0,2458225,16,4,2018);" style="color:black">16
+                                    <div class="am">1/3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mão, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(2,3,2018,0,2458226,17,4,2018);" style="color:black">17
+                                    <div class="am">2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thìn, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(3,3,2018,0,2458227,18,4,2018);" style="color:black">18
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Tỵ, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(4,3,2018,0,2458228,19,4,2018);" style="color:black">19
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Ngọ, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(5,3,2018,0,2458229,20,4,2018);" style="color:black">20
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mùi, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(6,3,2018,0,2458230,21,4,2018);" style="color:black">21
+                                    <div class="am">6</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Giáp Thân, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(7,3,2018,0,2458231,22,4,2018);" style="color:#bb0000">22
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Dậu, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(8,3,2018,0,2458232,23,4,2018);" style="color:black">23
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tuất, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(9,3,2018,0,2458233,24,4,2018);" style="color:black">24
+                                    <div class="am">9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Hợi, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(10,3,2018,0,2458234,25,4,2018);" style="color:black">25
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tý, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(11,3,2018,0,2458235,26,4,2018);" style="color:black">26
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Sửu, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(12,3,2018,0,2458236,27,4,2018);" style="color:black">27
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Dần, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(13,3,2018,0,2458237,28,4,2018);" style="color:black">28
+                                    <div class="am">13</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Tân Mão, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(14,3,2018,0,2458238,29,4,2018);" style="color:#bb0000">29
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thìn, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(15,3,2018,0,2458239,30,4,2018);" style="color:black">30
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=5">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=4">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Mai</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=6">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=5">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Tỵ, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(16,3,2018,0,2458240,1,5,2018);" style="color:black">1
+                                    <div class="am">16/3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Ngọ, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(17,3,2018,0,2458241,2,5,2018);" style="color:black">2
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mùi, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(18,3,2018,0,2458242,3,5,2018);" style="color:black">3
+                                    <div class="am">18</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thân, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(19,3,2018,0,2458243,4,5,2018);" style="color:black">4
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Dậu, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(20,3,2018,0,2458244,5,5,2018);" style="color:black">5
+                                    <div class="am">20</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Mậu Tuất, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(21,3,2018,0,2458245,6,5,2018);" style="color:#bb0000">6
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Hợi, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(22,3,2018,0,2458246,7,5,2018);" style="color:black">7
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tý, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(23,3,2018,0,2458247,8,5,2018);" style="color:black">8
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Sửu, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(24,3,2018,0,2458248,9,5,2018);" style="color:black">9
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Dần, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(25,3,2018,0,2458249,10,5,2018);" style="color:black">10
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mão, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(26,3,2018,0,2458250,11,5,2018);" style="color:black">11
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thìn, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(27,3,2018,0,2458251,12,5,2018);" style="color:black">12
+                                    <div class="am">27</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Ất Tỵ, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(28,3,2018,0,2458252,13,5,2018);" style="color:#bb0000">13
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Ngọ, tháng Bính Thìn, năm Mậu Tuất" onclick="alertDayInfo(29,3,2018,0,2458253,14,5,2018);" style="color:black">14
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mùi, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(1,4,2018,0,2458254,15,5,2018);" style="color:black">15
+                                    <div class="am">1/4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thân, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(2,4,2018,0,2458255,16,5,2018);" style="color:black">16
+                                    <div class="am">2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Dậu, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(3,4,2018,0,2458256,17,5,2018);" style="color:black">17
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tuất, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(4,4,2018,0,2458257,18,5,2018);" style="color:black">18
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Hợi, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(5,4,2018,0,2458258,19,5,2018);" style="color:black">19
+                                    <div class="am">5</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Nhâm Tý, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(6,4,2018,0,2458259,20,5,2018);" style="color:#bb0000">20
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Sửu, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(7,4,2018,0,2458260,21,5,2018);" style="color:black">21
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Dần, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(8,4,2018,0,2458261,22,5,2018);" style="color:black">22
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mão, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(9,4,2018,0,2458262,23,5,2018);" style="color:black">23
+                                    <div class="am">9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thìn, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(10,4,2018,0,2458263,24,5,2018);" style="color:black">24
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Tỵ, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(11,4,2018,0,2458264,25,5,2018);" style="color:black">25
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Ngọ, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(12,4,2018,0,2458265,26,5,2018);" style="color:black">26
+                                    <div class="am">12</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Kỷ Mùi, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(13,4,2018,0,2458266,27,5,2018);" style="color:#bb0000">27
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thân, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(14,4,2018,0,2458267,28,5,2018);" style="color:black">28
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Dậu, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(15,4,2018,0,2458268,29,5,2018);" style="color:black">29
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tuất, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(16,4,2018,0,2458269,30,5,2018);" style="color:black">30
+                                    <div class="am">16</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Hợi, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(17,4,2018,0,2458270,31,5,2018);" style="color:black">31
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=6">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=5">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Juin</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=7">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=6">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tý, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(18,4,2018,0,2458271,1,6,2018);" style="color:black">1
+                                    <div class="am">18/4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Sửu, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(19,4,2018,0,2458272,2,6,2018);" style="color:black">2
+                                    <div class="am">19</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Bính Dần, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(20,4,2018,0,2458273,3,6,2018);" style="color:#bb0000">3
+                                    <div class="am">20</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mão, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(21,4,2018,0,2458274,4,6,2018);" style="color:black">4
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thìn, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(22,4,2018,0,2458275,5,6,2018);" style="color:black">5
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Tỵ, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(23,4,2018,0,2458276,6,6,2018);" style="color:black">6
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Ngọ, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(24,4,2018,0,2458277,7,6,2018);" style="color:black">7
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mùi, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(25,4,2018,0,2458278,8,6,2018);" style="color:black">8
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thân, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(26,4,2018,0,2458279,9,6,2018);" style="color:black">9
+                                    <div class="am">26</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Quý Dậu, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(27,4,2018,0,2458280,10,6,2018);" style="color:#bb0000">10
+                                    <div class="am">27</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tuất, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(28,4,2018,0,2458281,11,6,2018);" style="color:black">11
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Hợi, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(29,4,2018,0,2458282,12,6,2018);" style="color:black">12
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tý, tháng Đinh Tỵ, năm Mậu Tuất" onclick="alertDayInfo(30,4,2018,0,2458283,13,6,2018);" style="color:black">13
+                                    <div class="am">30</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Sửu, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(1,5,2018,0,2458284,14,6,2018);" style="color:black">14
+                                    <div class="am">1/5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Dần, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(2,5,2018,0,2458285,15,6,2018);" style="color:black">15
+                                    <div class="am">2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mão, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(3,5,2018,0,2458286,16,6,2018);" style="color:black">16
+                                    <div class="am">3</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Canh Thìn, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(4,5,2018,0,2458287,17,6,2018);" style="color:#bb0000">17
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Tỵ, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(5,5,2018,0,2458288,18,6,2018);" style="color:black">18
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Ngọ, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(6,5,2018,0,2458289,19,6,2018);" style="color:black">19
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mùi, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(7,5,2018,0,2458290,20,6,2018);" style="color:black">20
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thân, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(8,5,2018,0,2458291,21,6,2018);" style="color:black">21
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Dậu, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(9,5,2018,0,2458292,22,6,2018);" style="color:black">22
+                                    <div class="am">9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tuất, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(10,5,2018,0,2458293,23,6,2018);" style="color:black">23
+                                    <div class="am">10</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Đinh Hợi, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(11,5,2018,0,2458294,24,6,2018);" style="color:#bb0000">24
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tý, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(12,5,2018,0,2458295,25,6,2018);" style="color:black">25
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Sửu, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(13,5,2018,0,2458296,26,6,2018);" style="color:black">26
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Dần, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(14,5,2018,0,2458297,27,6,2018);" style="color:black">27
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mão, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(15,5,2018,0,2458298,28,6,2018);" style="color:black">28
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thìn, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(16,5,2018,0,2458299,29,6,2018);" style="color:black">29
+                                    <div class="am">16</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Tỵ, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(17,5,2018,0,2458300,30,6,2018);" style="color:black">30
+                                    <div class="am">17</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=7">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=6">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Juillet</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=8">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=7">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Giáp Ngọ, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(18,5,2018,0,2458301,1,7,2018);" style="color:#bb0000">1
+                                    <div class="am">18/5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mùi, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(19,5,2018,0,2458302,2,7,2018);" style="color:black">2
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thân, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(20,5,2018,0,2458303,3,7,2018);" style="color:black">3
+                                    <div class="am">20</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Dậu, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(21,5,2018,0,2458304,4,7,2018);" style="color:black">4
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tuất, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(22,5,2018,0,2458305,5,7,2018);" style="color:black">5
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Hợi, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(23,5,2018,0,2458306,6,7,2018);" style="color:black">6
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tý, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(24,5,2018,0,2458307,7,7,2018);" style="color:black">7
+                                    <div class="am">24</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Tân Sửu, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(25,5,2018,0,2458308,8,7,2018);" style="color:#bb0000">8
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Dần, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(26,5,2018,0,2458309,9,7,2018);" style="color:black">9
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mão, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(27,5,2018,0,2458310,10,7,2018);" style="color:black">10
+                                    <div class="am">27</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thìn, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(28,5,2018,0,2458311,11,7,2018);" style="color:black">11
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Tỵ, tháng Mậu Ngọ, năm Mậu Tuất" onclick="alertDayInfo(29,5,2018,0,2458312,12,7,2018);" style="color:black">12
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Ngọ, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(1,6,2018,0,2458313,13,7,2018);" style="color:black">13
+                                    <div class="am">1/6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mùi, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(2,6,2018,0,2458314,14,7,2018);" style="color:black">14
+                                    <div class="am">2</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Mậu Thân, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(3,6,2018,0,2458315,15,7,2018);" style="color:#bb0000">15
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Dậu, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(4,6,2018,0,2458316,16,7,2018);" style="color:black">16
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tuất, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(5,6,2018,0,2458317,17,7,2018);" style="color:black">17
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Hợi, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(6,6,2018,0,2458318,18,7,2018);" style="color:black">18
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tý, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(7,6,2018,0,2458319,19,7,2018);" style="color:black">19
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Sửu, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(8,6,2018,0,2458320,20,7,2018);" style="color:black">20
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Dần, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(9,6,2018,0,2458321,21,7,2018);" style="color:black">21
+                                    <div class="am">9</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Ất Mão, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(10,6,2018,0,2458322,22,7,2018);" style="color:#bb0000">22
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thìn, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(11,6,2018,0,2458323,23,7,2018);" style="color:black">23
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Tỵ, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(12,6,2018,0,2458324,24,7,2018);" style="color:black">24
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Ngọ, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(13,6,2018,0,2458325,25,7,2018);" style="color:black">25
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mùi, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(14,6,2018,0,2458326,26,7,2018);" style="color:black">26
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thân, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(15,6,2018,0,2458327,27,7,2018);" style="color:black">27
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Dậu, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(16,6,2018,0,2458328,28,7,2018);" style="color:black">28
+                                    <div class="am">16</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Nhâm Tuất, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(17,6,2018,0,2458329,29,7,2018);" style="color:#bb0000">29
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Hợi, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(18,6,2018,0,2458330,30,7,2018);" style="color:black">30
+                                    <div class="am">18</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tý, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(19,6,2018,0,2458331,31,7,2018);" style="color:black">31
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=8">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=7">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Août</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=9">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=8">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Sửu, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(20,6,2018,0,2458332,1,8,2018);" style="color:black">1
+                                    <div class="am">20/6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Dần, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(21,6,2018,0,2458333,2,8,2018);" style="color:black">2
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mão, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(22,6,2018,0,2458334,3,8,2018);" style="color:black">3
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thìn, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(23,6,2018,0,2458335,4,8,2018);" style="color:black">4
+                                    <div class="am">23</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Kỷ Tỵ, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(24,6,2018,0,2458336,5,8,2018);" style="color:#bb0000">5
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Ngọ, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(25,6,2018,0,2458337,6,8,2018);" style="color:black">6
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mùi, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(26,6,2018,0,2458338,7,8,2018);" style="color:black">7
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thân, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(27,6,2018,0,2458339,8,8,2018);" style="color:black">8
+                                    <div class="am">27</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Dậu, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(28,6,2018,0,2458340,9,8,2018);" style="color:black">9
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tuất, tháng Kỷ Mùi, năm Mậu Tuất" onclick="alertDayInfo(29,6,2018,0,2458341,10,8,2018);" style="color:black">10
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Hợi, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(1,7,2018,0,2458342,11,8,2018);" style="color:black">11
+                                    <div class="am">1/7</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Bính Tý, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(2,7,2018,0,2458343,12,8,2018);" style="color:#bb0000">12
+                                    <div class="am">2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Sửu, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(3,7,2018,0,2458344,13,8,2018);" style="color:black">13
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Dần, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(4,7,2018,0,2458345,14,8,2018);" style="color:black">14
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mão, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(5,7,2018,0,2458346,15,8,2018);" style="color:black">15
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thìn, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(6,7,2018,0,2458347,16,8,2018);" style="color:black">16
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Tỵ, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(7,7,2018,0,2458348,17,8,2018);" style="color:black">17
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Ngọ, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(8,7,2018,0,2458349,18,8,2018);" style="color:black">18
+                                    <div class="am">8</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Quý Mùi, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(9,7,2018,0,2458350,19,8,2018);" style="color:#bb0000">19
+                                    <div class="am">9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thân, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(10,7,2018,0,2458351,20,8,2018);" style="color:black">20
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Dậu, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(11,7,2018,0,2458352,21,8,2018);" style="color:black">21
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tuất, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(12,7,2018,0,2458353,22,8,2018);" style="color:black">22
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Hợi, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(13,7,2018,0,2458354,23,8,2018);" style="color:black">23
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tý, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(14,7,2018,0,2458355,24,8,2018);" style="color:black">24
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Sửu, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(15,7,2018,0,2458356,25,8,2018);" style="color:black">25
+                                    <div class="am">15</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Canh Dần, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(16,7,2018,0,2458357,26,8,2018);" style="color:#bb0000">26
+                                    <div class="am">16</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mão, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(17,7,2018,0,2458358,27,8,2018);" style="color:black">27
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thìn, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(18,7,2018,0,2458359,28,8,2018);" style="color:black">28
+                                    <div class="am">18</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Tỵ, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(19,7,2018,0,2458360,29,8,2018);" style="color:black">29
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Ngọ, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(20,7,2018,0,2458361,30,8,2018);" style="color:black">30
+                                    <div class="am">20</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mùi, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(21,7,2018,0,2458362,31,8,2018);" style="color:black">31
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=9">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=8">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Septembre</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=10">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=9">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thân, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(22,7,2018,0,2458363,1,9,2018);" style="color:black">1
+                                    <div class="am">22/7</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Đinh Dậu, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(23,7,2018,0,2458364,2,9,2018);" style="color:#bb0000">2
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tuất, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(24,7,2018,0,2458365,3,9,2018);" style="color:black">3
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Hợi, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(25,7,2018,0,2458366,4,9,2018);" style="color:black">4
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tý, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(26,7,2018,0,2458367,5,9,2018);" style="color:black">5
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Sửu, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(27,7,2018,0,2458368,6,9,2018);" style="color:black">6
+                                    <div class="am">27</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Dần, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(28,7,2018,0,2458369,7,9,2018);" style="color:black">7
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mão, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(29,7,2018,0,2458370,8,9,2018);" style="color:black">8
+                                    <div class="am">29</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Giáp Thìn, tháng Canh Thân, năm Mậu Tuất" onclick="alertDayInfo(30,7,2018,0,2458371,9,9,2018);" style="color:#bb0000">9
+                                    <div class="am">30</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Tỵ, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(1,8,2018,0,2458372,10,9,2018);" style="color:black">10
+                                    <div class="am">1/8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Ngọ, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(2,8,2018,0,2458373,11,9,2018);" style="color:black">11
+                                    <div class="am">2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mùi, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(3,8,2018,0,2458374,12,9,2018);" style="color:black">12
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thân, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(4,8,2018,0,2458375,13,9,2018);" style="color:black">13
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Dậu, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(5,8,2018,0,2458376,14,9,2018);" style="color:black">14
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tuất, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(6,8,2018,0,2458377,15,9,2018);" style="color:black">15
+                                    <div class="am">6</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Tân Hợi, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(7,8,2018,0,2458378,16,9,2018);" style="color:#bb0000">16
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tý, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(8,8,2018,0,2458379,17,9,2018);" style="color:black">17
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Sửu, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(9,8,2018,0,2458380,18,9,2018);" style="color:black">18
+                                    <div class="am">9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Dần, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(10,8,2018,0,2458381,19,9,2018);" style="color:black">19
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mão, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(11,8,2018,0,2458382,20,9,2018);" style="color:black">20
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thìn, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(12,8,2018,0,2458383,21,9,2018);" style="color:black">21
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Tỵ, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(13,8,2018,0,2458384,22,9,2018);" style="color:black">22
+                                    <div class="am">13</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Mậu Ngọ, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(14,8,2018,0,2458385,23,9,2018);" style="color:#bb0000">23
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mùi, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(15,8,2018,0,2458386,24,9,2018);" style="color:black">24
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thân, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(16,8,2018,0,2458387,25,9,2018);" style="color:black">25
+                                    <div class="am">16</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Dậu, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(17,8,2018,0,2458388,26,9,2018);" style="color:black">26
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tuất, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(18,8,2018,0,2458389,27,9,2018);" style="color:black">27
+                                    <div class="am">18</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Hợi, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(19,8,2018,0,2458390,28,9,2018);" style="color:black">28
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tý, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(20,8,2018,0,2458391,29,9,2018);" style="color:black">29
+                                    <div class="am">20</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Ất Sửu, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(21,8,2018,0,2458392,30,9,2018);" style="color:#bb0000">30
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=10">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=9">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Octobre</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=11">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=10">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Dần, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(22,8,2018,0,2458393,1,10,2018);" style="color:black">1
+                                    <div class="am">22/8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mão, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(23,8,2018,0,2458394,2,10,2018);" style="color:black">2
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thìn, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(24,8,2018,0,2458395,3,10,2018);" style="color:black">3
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Tỵ, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(25,8,2018,0,2458396,4,10,2018);" style="color:black">4
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Ngọ, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(26,8,2018,0,2458397,5,10,2018);" style="color:black">5
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mùi, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(27,8,2018,0,2458398,6,10,2018);" style="color:black">6
+                                    <div class="am">27</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Nhâm Thân, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(28,8,2018,0,2458399,7,10,2018);" style="color:#bb0000">7
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Dậu, tháng Tân Dậu, năm Mậu Tuất" onclick="alertDayInfo(29,8,2018,0,2458400,8,10,2018);" style="color:black">8
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tuất, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(1,9,2018,0,2458401,9,10,2018);" style="color:black">9
+                                    <div class="am">1/9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Hợi, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(2,9,2018,0,2458402,10,10,2018);" style="color:black">10
+                                    <div class="am">2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tý, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(3,9,2018,0,2458403,11,10,2018);" style="color:black">11
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Sửu, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(4,9,2018,0,2458404,12,10,2018);" style="color:black">12
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Dần, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(5,9,2018,0,2458405,13,10,2018);" style="color:black">13
+                                    <div class="am">5</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Kỷ Mão, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(6,9,2018,0,2458406,14,10,2018);" style="color:#bb0000">14
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thìn, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(7,9,2018,0,2458407,15,10,2018);" style="color:black">15
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Tỵ, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(8,9,2018,0,2458408,16,10,2018);" style="color:black">16
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Ngọ, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(9,9,2018,0,2458409,17,10,2018);" style="color:black">17
+                                    <div class="am">9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mùi, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(10,9,2018,0,2458410,18,10,2018);" style="color:black">18
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thân, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(11,9,2018,0,2458411,19,10,2018);" style="color:black">19
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Dậu, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(12,9,2018,0,2458412,20,10,2018);" style="color:black">20
+                                    <div class="am">12</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Bính Tuất, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(13,9,2018,0,2458413,21,10,2018);" style="color:#bb0000">21
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Hợi, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(14,9,2018,0,2458414,22,10,2018);" style="color:black">22
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tý, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(15,9,2018,0,2458415,23,10,2018);" style="color:black">23
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Sửu, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(16,9,2018,0,2458416,24,10,2018);" style="color:black">24
+                                    <div class="am">16</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Dần, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(17,9,2018,0,2458417,25,10,2018);" style="color:black">25
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mão, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(18,9,2018,0,2458418,26,10,2018);" style="color:black">26
+                                    <div class="am">18</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thìn, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(19,9,2018,0,2458419,27,10,2018);" style="color:black">27
+                                    <div class="am">19</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Quý Tỵ, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(20,9,2018,0,2458420,28,10,2018);" style="color:#bb0000">28
+                                    <div class="am">20</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Ngọ, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(21,9,2018,0,2458421,29,10,2018);" style="color:black">29
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mùi, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(22,9,2018,0,2458422,30,10,2018);" style="color:black">30
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thân, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(23,9,2018,0,2458423,31,10,2018);" style="color:black">31
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=11">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=10">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Novembre</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=12">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=11">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Dậu, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(24,9,2018,0,2458424,1,11,2018);" style="color:black">1
+                                    <div class="am">24/9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tuất, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(25,9,2018,0,2458425,2,11,2018);" style="color:black">2
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Hợi, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(26,9,2018,0,2458426,3,11,2018);" style="color:black">3
+                                    <div class="am">26</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Canh Tý, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(27,9,2018,0,2458427,4,11,2018);" style="color:#bb0000">4
+                                    <div class="am">27</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Sửu, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(28,9,2018,0,2458428,5,11,2018);" style="color:black">5
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Dần, tháng Nhâm Tuất, năm Mậu Tuất" onclick="alertDayInfo(29,9,2018,0,2458429,6,11,2018);" style="color:black">6
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mão, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(1,10,2018,0,2458430,7,11,2018);" style="color:black">7
+                                    <div class="am">1/10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thìn, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(2,10,2018,0,2458431,8,11,2018);" style="color:black">8
+                                    <div class="am">2</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Tỵ, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(3,10,2018,0,2458432,9,11,2018);" style="color:black">9
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Ngọ, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(4,10,2018,0,2458433,10,11,2018);" style="color:black">10
+                                    <div class="am">4</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Đinh Mùi, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(5,10,2018,0,2458434,11,11,2018);" style="color:#bb0000">11
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Thân, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(6,10,2018,0,2458435,12,11,2018);" style="color:black">12
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Dậu, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(7,10,2018,0,2458436,13,11,2018);" style="color:black">13
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Tuất, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(8,10,2018,0,2458437,14,11,2018);" style="color:black">14
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Hợi, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(9,10,2018,0,2458438,15,11,2018);" style="color:black">15
+                                    <div class="am">9</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tý, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(10,10,2018,0,2458439,16,11,2018);" style="color:black">16
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Sửu, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(11,10,2018,0,2458440,17,11,2018);" style="color:black">17
+                                    <div class="am">11</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Giáp Dần, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(12,10,2018,0,2458441,18,11,2018);" style="color:#bb0000">18
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mão, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(13,10,2018,0,2458442,19,11,2018);" style="color:black">19
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Thìn, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(14,10,2018,0,2458443,20,11,2018);" style="color:black">20
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Tỵ, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(15,10,2018,0,2458444,21,11,2018);" style="color:black">21
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Ngọ, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(16,10,2018,0,2458445,22,11,2018);" style="color:black">22
+                                    <div class="am">16</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mùi, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(17,10,2018,0,2458446,23,11,2018);" style="color:black">23
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thân, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(18,10,2018,0,2458447,24,11,2018);" style="color:black">24
+                                    <div class="am">18</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Tân Dậu, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(19,10,2018,0,2458448,25,11,2018);" style="color:#bb0000">25
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Tuất, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(20,10,2018,0,2458449,26,11,2018);" style="color:black">26
+                                    <div class="am">20</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Hợi, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(21,10,2018,0,2458450,27,11,2018);" style="color:black">27
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tý, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(22,10,2018,0,2458451,28,11,2018);" style="color:black">28
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Sửu, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(23,10,2018,0,2458452,29,11,2018);" style="color:black">29
+                                    <div class="am">23</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Dần, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(24,10,2018,0,2458453,30,11,2018);" style="color:black">30
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>
+                    <table class="thang" border="2" cellpadding="1" cellspacing="1" width="180px">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" class="navi-l"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2017&amp;mm=12">&lt;&lt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2018&amp;mm=11">&lt;</a></td>
+                                <td colspan="5" class="tenthang" onclick="showMonthSelect();">Décembre</td>
+                                <td colspan="1" class="navi-r"><a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=1">&gt;</a> &nbsp;<a href="/D:/1Projects/1DEV/amsstranger/currentyear.html?yy=2019&amp;mm=12">&gt;&gt;</a></td>
+                            </tr>
+                            <tr onclick="alertAbout();">
+                                <td class="ngaytuan">Dim.</td>
+                                <td class="ngaytuan">Lun.</td>
+                                <td class="ngaytuan">Mar.</td>
+                                <td class="ngaytuan">Mer.</td>
+                                <td class="ngaytuan">Jeu.</td>
+                                <td class="ngaytuan">Ven.</td>
+                                <td class="ngaytuan">Sam.</td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Mão, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(25,10,2018,0,2458454,1,12,2018);" style="color:black">1
+                                    <div class="am">25/10</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Mậu Thìn, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(26,10,2018,0,2458455,2,12,2018);" style="color:#bb0000">2
+                                    <div class="am">26</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Tỵ, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(27,10,2018,0,2458456,3,12,2018);" style="color:black">3
+                                    <div class="am">27</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Ngọ, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(28,10,2018,0,2458457,4,12,2018);" style="color:black">4
+                                    <div class="am">28</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mùi, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(29,10,2018,0,2458458,5,12,2018);" style="color:black">5
+                                    <div class="am">29</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thân, tháng Quý Hợi, năm Mậu Tuất" onclick="alertDayInfo(30,10,2018,0,2458459,6,12,2018);" style="color:black">6
+                                    <div class="am">30</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Dậu, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(1,11,2018,0,2458460,7,12,2018);" style="color:black">7
+                                    <div class="am">1/11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Tuất, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(2,11,2018,0,2458461,8,12,2018);" style="color:black">8
+                                    <div class="am">2</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Ất Hợi, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(3,11,2018,0,2458462,9,12,2018);" style="color:#bb0000">9
+                                    <div class="am">3</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tý, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(4,11,2018,0,2458463,10,12,2018);" style="color:black">10
+                                    <div class="am">4</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Sửu, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(5,11,2018,0,2458464,11,12,2018);" style="color:black">11
+                                    <div class="am">5</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Dần, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(6,11,2018,0,2458465,12,12,2018);" style="color:black">12
+                                    <div class="am">6</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Kỷ Mão, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(7,11,2018,0,2458466,13,12,2018);" style="color:black">13
+                                    <div class="am">7</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Thìn, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(8,11,2018,0,2458467,14,12,2018);" style="color:black">14
+                                    <div class="am">8</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Tỵ, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(9,11,2018,0,2458468,15,12,2018);" style="color:black">15
+                                    <div class="am">9</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Nhâm Ngọ, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(10,11,2018,0,2458469,16,12,2018);" style="color:#bb0000">16
+                                    <div class="am">10</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Mùi, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(11,11,2018,0,2458470,17,12,2018);" style="color:black">17
+                                    <div class="am">11</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Thân, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(12,11,2018,0,2458471,18,12,2018);" style="color:black">18
+                                    <div class="am">12</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Dậu, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(13,11,2018,0,2458472,19,12,2018);" style="color:black">19
+                                    <div class="am">13</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Bính Tuất, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(14,11,2018,0,2458473,20,12,2018);" style="color:black">20
+                                    <div class="am">14</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Hợi, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(15,11,2018,0,2458474,21,12,2018);" style="color:black">21
+                                    <div class="am">15</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Mậu Tý, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(16,11,2018,0,2458475,22,12,2018);" style="color:black">22
+                                    <div class="am">16</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Kỷ Sửu, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(17,11,2018,0,2458476,23,12,2018);" style="color:#bb0000">23
+                                    <div class="am">17</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Canh Dần, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(18,11,2018,0,2458477,24,12,2018);" style="color:black">24
+                                    <div class="am">18</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Tân Mão, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(19,11,2018,0,2458478,25,12,2018);" style="color:black">25
+                                    <div class="am">19</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Nhâm Thìn, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(20,11,2018,0,2458479,26,12,2018);" style="color:black">26
+                                    <div class="am">20</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Quý Tỵ, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(21,11,2018,0,2458480,27,12,2018);" style="color:black">27
+                                    <div class="am">21</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Giáp Ngọ, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(22,11,2018,0,2458481,28,12,2018);" style="color:black">28
+                                    <div class="am">22</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Ất Mùi, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(23,11,2018,0,2458482,29,12,2018);" style="color:black">29
+                                    <div class="am">23</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="ngaythang" title="Ngày Bính Thân, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(24,11,2018,0,2458483,30,12,2018);" style="color:#bb0000">30
+                                    <div class="am">24</div>
+                                </td>
+                                <td class="ngaythang" title="Ngày Đinh Dậu, tháng Giáp Tý, năm Mậu Tuất" onclick="alertDayInfo(25,11,2018,0,2458484,31,12,2018);" style="color:black">31
+                                    <div class="am">25</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                                <td class="ngaythang">
+                                    <div class="cn">&nbsp;</div>
+                                    <div class="am">&nbsp;</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+
+
+
+
+    </table>
+<script src="../jquery.min.js"></script>
+<script>
+    var ngaynghi = {
+        "1-1":true,
+        "15-2":true,
+        "16-2":true,
+        "17-2":true,
+        "18-2":true,
+        "19-2":true,
+        "20-2":true,
+        "21-2":true,
+        "25-4":true,
+        "30-4":true,
+        "1-5":true,
+        "2-9":true,
+        "3-9":true,
+        "a":false
+    }
+	
+	var months_trans = {
+		"Janvier": "Tháng 1",
+		"Février": "Tháng 2",
+		"Mars": "Tháng 3",
+		"Avril": "Tháng 4",
+		"Mai": "Tháng 5",
+		"Juin": "Tháng 6",
+		"Juillet": "Tháng 7",
+		"Août": "Tháng 8",
+		"Septembre": "Tháng 9",
+		"Octobre": "Tháng 10",
+		"Novembre": "Tháng 11",
+		"Décembre": "Tháng 12",
+	}
+    
+    
+function isempty(el) {
+    //console.log(el.html());
+    return el.html().indexOf("&nbsp;") !== -1;
+}
+    
+var myempty = '<td class="ngaythang" style="opacity:0"><span>1</span><div class="am">1</div></td>';
+var month = 1;
+$('.thang').each(function() {
+    var i=0;
+    var head = '';
+    var elements = [];
+    $(this).find('tr').each(function() {
+        if (i==0) {
+            head += $(this).prop('outerHTML');
+            i++; return;
+        }
+        if (i==1) {
+            head += `<tr>
+                                <td class="ngaytuan">T2</td>
+                                <td class="ngaytuan">T3</td>
+                                <td class="ngaytuan">T4</td>
+                                <td class="ngaytuan">T5</td>
+                                <td class="ngaytuan">T6</td>
+                                <td class="ngaytuan">T7</td>
+                                <td class="ngaytuan">CN</td>
+                            </tr>`;
+            i++; return;
+        }
+        $(this).find('td').each(function() {
+            elements.push($(this));
+        });
+        i++;
+    })
+
+    if (isempty(elements[0])) {
+        elements.shift();
+    } else {
+        for (var n=0;n<6;n++) {elements.unshift($($.parseHTML(myempty)))}
+    }
+    
+    var n=0;
+    var html = '';
+    for (var y=0;y<6;y++) {
+        html += '<tr>';
+        for (var x=0;x<7;x++) {
+            if (!elements[n]) {
+                html += myempty;
+            } else if (isempty(elements[n])) {
+                html += myempty;
+            } else {
+                var date = elements[n].html().match(/[0-9]{1,2}/);
+                if (date && date.length > 0) date = date[0];
+                else date = -1;
+                if (ngaynghi[date+"-"+month]) html += elements[n].prop('outerHTML').replace("black", "#bb0000");
+                else html += elements[n].prop('outerHTML');
+            }
+            n++;
+        }
+        html += '</tr>';
+    }
+	
+	Object.keys(months_trans).forEach(function(fr) {
+		head = head.replace(fr, months_trans[fr])
+	})
+	
+    $(this).html(head+html);
+    month++;
+})
+</script>
+</body>
+
+</html>
